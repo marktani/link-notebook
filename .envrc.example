@@ -1,0 +1,5 @@
+export SENDGRID_API_KEY=""
+export TELEGRAM_BOT_TOKEN=""
+export FROM_EMAIL=""
+export DEBUG_EMAIL=""
+export LINK_NOTEBOOK_DEBUG=""
