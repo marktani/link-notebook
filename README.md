@@ -1,5 +1,4 @@
 # link-notebook
-Telegram bot to save a website as PDF
 
 ## Idea
 
