@@ -37,7 +37,8 @@ def help(bot, update):
 
 def note(bot, update):
     if os.getenv('LINK_NOTEBOOK_DEBUG'):
-        userconfig[update.message.chat.id] = os.getenv('DEBUG_EMAIL')
+        if update.message.chat.id not in userconfig:
+            userconfig[update.message.chat.id] = os.getenv('DEBUG_EMAIL')
 
     if userconfig[update.message.chat.id]:
         timestamp = datetime.datetime.today().isoformat()
